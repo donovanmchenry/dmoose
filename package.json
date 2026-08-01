@@ -1,0 +1,15 @@
+{
+  "name": "dmoose",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A private-by-default, file-based second brain.",
+  "type": "module",
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "validate": "node scripts/validate-workspace.mjs",
+    "test": "node scripts/validate-workspace.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

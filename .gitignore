@@ -1,0 +1,22 @@
+.env
+.env.*
+*.pem
+*.key
+secrets/
+
+# Personal, machine-local setup. Keep these private by default.
+USER.md
+NOW.md
+projects/local-paths.md
+config/local.json
+
+# Local app and runtime state.
+.DS_Store
+/Icon?
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.trash/
+/runtime/*
+!/runtime/README.md
+/outputs/*
+!/outputs/README.md

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Dmoose</title>
+  <desc id="desc">A friendly moose head inside a forest-green circle</desc>
+  <circle cx="128" cy="128" r="120" fill="#173f35"/>
+  <path d="M82 92C65 82 55 66 59 50c18 3 30 13 35 29M174 92c17-10 27-26 23-42-18 3-30 13-35 29" fill="none" stroke="#d9b57a" stroke-width="13" stroke-linecap="round"/>
+  <path d="M71 76 48 68M75 60 57 46M185 76l23-8M181 60l18-14" fill="none" stroke="#d9b57a" stroke-width="10" stroke-linecap="round"/>
+  <ellipse cx="128" cy="132" rx="67" ry="74" fill="#b97b4b"/>
+  <ellipse cx="128" cy="166" rx="48" ry="37" fill="#d9b57a"/>
+  <ellipse cx="104" cy="123" rx="7" ry="9" fill="#173f35"/>
+  <ellipse cx="152" cy="123" rx="7" ry="9" fill="#173f35"/>
+  <ellipse cx="110" cy="164" rx="7" ry="5" fill="#173f35"/>
+  <ellipse cx="146" cy="164" rx="7" ry="5" fill="#173f35"/>
+  <path d="M112 184c9 7 23 7 32 0" fill="none" stroke="#173f35" stroke-width="6" stroke-linecap="round"/>
+</svg>
