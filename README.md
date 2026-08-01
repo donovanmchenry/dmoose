@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/dmoose-icon.svg" alt="Dmoose moose icon" width="180">
+  <img src="assets/dmoose-logo.png" alt="Dmoose moose logo" width="240">
 </p>
 
 # Dmoose
