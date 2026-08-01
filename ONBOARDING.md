@@ -31,6 +31,14 @@ Begin in your own natural voice with the substance of:
 Then ask for the preferred name and what the owner most wants this second brain to
 help with.
 
+## Resuming an Existing Setup
+
+When `USER.md` and `NOW.md` already exist, read them first and compare the current
+workspace with the completion checklist below. Briefly summarize what is already
+configured and what is still missing. Ask only about the gaps, preserve confirmed
+answers, and continue into the first useful session. Do not overwrite the profile or
+make the owner repeat the original interview.
+
 ## Interview
 
 Cover these topics over several conversational turns. Adapt follow-up questions to

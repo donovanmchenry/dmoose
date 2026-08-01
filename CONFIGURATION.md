@@ -15,6 +15,12 @@ The onboarding is not finished when files exist. The assistant will also help wi
 one real starter outcome—usually planning the top priority, organizing one project,
 or structuring a small set of existing notes.
 
+To improve or finish an existing setup, say:
+
+> Review my current setup against ONBOARDING.md and help me finish the missing parts.
+
+The assistant will preserve confirmed information and ask only about gaps.
+
 ## Optional: Basic Terminal Wizard
 
 If you prefer a command line and already have Node.js 20 or newer, run:

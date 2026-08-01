@@ -23,6 +23,11 @@ personalize, start using, or build out Dmoose:
 If the user asks an unrelated read-only question, answer it and briefly offer guided
 setup. If the user declines setup, continue without inventing personal context.
 
+If `USER.md` and `NOW.md` already exist but the user asks to resume, review, redo, or
+finish configuration, use the completion checklist in `ONBOARDING.md` as an audit.
+Preserve confirmed information, identify only the missing or weak parts, and continue
+with the smallest useful question. Never make the user restart from zero.
+
 ## Start of a Task
 
 1. Apply the first-run gate before ordinary workspace work.
