@@ -1,14 +1,19 @@
 # Right Now
 
-This is a blank template. Run `npm run setup` to create the gitignored `NOW.md`.
+This is a blank template. Guided onboarding creates the gitignored `NOW.md` after the
+owner confirms their current priorities.
 
-## Current Focus
+Last reviewed: [YYYY-MM-DD]
 
-- [MOST IMPORTANT OUTCOME]
+## Top Outcomes
+
+1. [MOST IMPORTANT OUTCOME]
+2. [SECOND OUTCOME, IF TRULY CURRENT]
+3. [THIRD OUTCOME, IF TRULY CURRENT]
 
 ## Next Actions
 
-- [ ] [NEXT CONCRETE ACTION]
+- [ ] [SMALLEST CONCRETE ACTION FOR OUTCOME 1]
 
 ## Open Loops
 

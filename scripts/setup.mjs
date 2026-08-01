@@ -34,8 +34,12 @@ Options:
   --name            Preferred name
   --role            Broad role or short self-description
   --timezone        IANA timezone, such as America/New_York
+  --purpose         What Dmoose should make easier
   --focus           One current area of focus
   --communication   Preferred response style
+  --initiative      How proactive assistants should be
+  --friction        Assistant behavior to avoid
+  --never-store     Information Dmoose should never retain
   --defaults        Use privacy-safe placeholder defaults without prompting
   --force           Replace existing USER.md and NOW.md
   --help            Show this help`);
@@ -89,11 +93,31 @@ const detectedTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone || "UT
 const name = await ask("name", "Preferred name", "Your name");
 const role = await ask("role", "What do you do, in a few words", "Not set yet");
 const timezone = await ask("timezone", "Timezone", detectedTimezone);
+const purpose = await ask(
+  "purpose",
+  "What should Dmoose help make easier",
+  "Remember important context and turn priorities into clear next actions",
+);
 const focus = await ask("focus", "Most important current focus", "Choose a current focus");
 const communication = await ask(
   "communication",
   "How should assistants communicate",
   "Practical and concise, with clear next steps",
+);
+const initiative = await ask(
+  "initiative",
+  "How proactive should assistants be",
+  "Suggest useful next steps and make reversible improvements",
+);
+const friction = await ask(
+  "friction",
+  "What should assistants avoid doing",
+  "Overcomplicating simple tasks or leaving me without a clear next step",
+);
+const neverStore = await ask(
+  "never-store",
+  "What should Dmoose never retain",
+  "Secrets, credentials, or sensitive information without asking",
 );
 readline?.close();
 
@@ -113,10 +137,15 @@ compact and update it only with durable, user-confirmed information.
 
 - ${focus}
 
+## What Dmoose Should Help With
+
+- ${purpose}
+
 ## Working Preferences
 
 - Communication: ${communication}.
-- Initiative: Be proactive with analysis, organization, drafting, and reversible work.
+- Initiative: ${initiative}.
+- Friction to avoid: ${friction}.
 - Approval boundary: Ask before sending, publishing, purchasing, deleting, or acting
   on my behalf.
 
@@ -128,6 +157,7 @@ priorities, and durable knowledge.
 ## Privacy
 
 - Do not store secrets or credentials here.
+- Never retain: ${neverStore}.
 - Ask before retaining sensitive or consequential personal information.
 - Prefer confirmed facts and mark uncertainty explicitly.
 `;
@@ -177,7 +207,8 @@ console.log(`
 Setup complete.
 
 Next:
-  1. Open Dashboard.md.
-  2. Review USER.md and NOW.md.
-  3. Read CONFIGURATION.md before syncing personal information.
+  1. Review USER.md and NOW.md, then open Dashboard.md.
+  2. In Codex, say: "Continue onboarding and help me plan: ${focus}."
+  3. Complete one useful starter session before adding more structure.
+  4. Read CONFIGURATION.md before syncing personal information.
 `);

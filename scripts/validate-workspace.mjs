@@ -13,6 +13,7 @@ const required = [
   "README.md",
   "CONFIGURATION.md",
   "Dashboard.md",
+  "ONBOARDING.md",
   "USER.example.md",
   "NOW.example.md",
   "projects/index.md",
@@ -98,6 +99,14 @@ if (fs.existsSync(path.join(root, "projects", "index.md"))) {
 
 const exampleLines = fs.readFileSync(path.join(root, "USER.example.md"), "utf8").split(/\r?\n/).length;
 if (exampleLines > 100) errors.push(`USER.example.md has ${exampleLines} lines; maximum is 100`);
+
+const agentGuide = fs.readFileSync(path.join(root, "AGENTS.md"), "utf8");
+if (!agentGuide.includes("ONBOARDING.md")) {
+  errors.push("AGENTS.md does not route first-run setup to ONBOARDING.md");
+}
+if (!agentGuide.includes("Do not require Node.js, npm, Obsidian, Git")) {
+  errors.push("AGENTS.md does not protect no-tool onboarding");
+}
 
 const gitFiles = spawnSync("git", ["-C", root, "ls-files", "-z"], { encoding: "utf8" });
 if (gitFiles.status === 0) {
